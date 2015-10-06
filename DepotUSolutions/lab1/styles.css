@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  line-height: 1;
+}
+body {
+  background: white;
+  font-family: Georgia, Times, serif;
+}
+h2 {
+  border-top: #a4c5cd solid 2px;
+  border-bottom: #a4c5cd solid 2px;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 750px;
+}
+.space {
+  height: 5em;
+}
+header {
+  text-align: center;
+  height: 3em;
+  color: #639ba8;
+  background: #a4c5cd;
+  padding: 12px;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  vertical-align: baseline;
+}
+header ul {
+  margin: 10px;
+}
+header ul li {
+  display: inline;
+  padding: 12px;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+header li:hover {
+  background: #3b616a;
+}
+header li:hover a {
+  color: white;
+}
+div#container {
+  margin: 0 auto;
+}
+div#container div#content {
+  text-align: center;
+  padding: 20px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+div#container div#content .content-block {
+  margin: 0 100px 0;
+  text-align: left;
+  padding: 20px;
+}
+div#container div#content li {
+  list-style-type: none;
+}
+div#container div#content .half {
+  float: left;
+  width: 300px;
+}
+div#container div#content .right {
+  position: relative;
+}
+div#container div#content .right p {
+  padding: 20px 0 20px 40px;
+}
+div#container div#content .right li {
+  padding: 0 0 0 40px;
+}
+div#container div#content .left p {
+  padding: 20px 40px 20px 0;
+}
+div#container div#content .left li {
+  padding: 0 40px 0 0;
+}
+div#container div#content div#about div#name {
+  padding: 20px 0;
+}
+div#container div#content div#skills,
+div#container div#content div#projects {
+  clear: both;
+}
+div#container div#content div.projects,
+div#container div#content ul#experience li {
+  padding: 20px 0;
+}
+div#container div#content div#resume ul#experience li p {
+  text-indent: 10px;
+}
+div#container div#content div#resume ul#experience li .date {
+  font-style: italic;
+  color: #a4c5cd;
+}
+div#container div#content div#contact-content {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #639ba8;
+  background: #a4c5cd;
+  padding: 20px 0;
+  color: white;
+  width: 600px;
+  margin: 20px auto;
+}
+form {
+  width: 300px;
+  margin: 20px auto 0;
+}
+form label {
+  width: 290px;
+  display: block;
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: left;
+}
+form input {
+  width: 290px;
+  display: block;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 0 10px;
+  border: none;
+  font-size: 20px;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+}
+form #message {
+  height: 200px;
+}
+form #submit {
+  color: #639ba8;
+  background: white;
+  width: 300px;
+  font-style: normal;
+}
+form #submit:hover {
+  color: white;
+  background: #3b616a;
+}
+footer {
+  text-align: center;
+  height: 3em;
+  color: #639ba8;
+  background: white;
+  padding: 12px;
+  width: 600px;
+  border-top: #a4c5cd solid;
+  margin: 40px auto 0;
+}
+footer ul {
+  margin: 10px;
+}
+footer ul li {
+  display: inline;
+  padding: 12px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #639ba8;
+}
+footer li:hover {
+  background: #3b616a;
+}
+footer li:hover a {
+  color: white;
+}

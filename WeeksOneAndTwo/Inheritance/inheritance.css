@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #78786e;
+}
+.motorCycle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.copCar {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+.Car {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+.Tank {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: yellow;
+}

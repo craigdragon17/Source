@@ -1,0 +1,173 @@
+<!-- //### Instuctions
+//Using the sample as a reference, create a simple resume page with the following requirements:
+
+//You can reference more on [HTML here](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference) and
+//[CSS here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+//*All text can be filled with your information or [Lorem Ipsum](http://loremipsumgenerator.org/) filler text.
+
+
+//#### Further Reading
+//This is also a great explanation on [floats](http://alistapart.com/article/css-floats-101)
+
+//#### Basic Req's:
+//* It should have an external style sheet
+//* The body should contain a header, footer and content
+
+//###### Header
+//*	Should have a navbar with at least 5 links (i.e. About, Skills, Resume, Contact, Projects etc.)
+//*	Should remain on top of all content when scrolling
+//*	The links should link to where the content is located on the page
+
+//###### About
+//*	Should have two small paragraphs
+//*	Float the paragraphs so they are side by side columns
+
+//###### Skills
+//*	List technical skills in two columns
+//*	Float the list so they are side by side columns
+
+//###### Resume
+//*	Should have an Experience and Education section
+//*	Under Experience, indent the content and italicize any dates
+
+//###### Contact
+//*	Should have a border, heading and contact form
+//*	All user to input name, email, message and send
+//*	Labels should be uppercase and bold but handled in css
+//*	Require user to input all field in order to send
+
+//###### Footer
+//*	A link to your github and linkedIn accounts
+//*	Should have your name and copyright
+
+//##### Also:
+//*	No underline on any links
+//*	Font should be all one color
+//*	Body background unique from font color
+//*	Border, labels, nav and footer background all one color
+//*	Links should change color when you hover over them
+//*	Form and content should be centered -->
+<html>
+	<head>
+		<title>Ethans Resume</title>
+		<link rel="stylesheet" href="lab1.css">
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<div id="container">
+	<!-- Navbar -->
+	<header class="bar">
+		<nav>
+			<ul>
+				<li><a href="#aboutme">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- content -->
+	
+		<div id="content">
+			<div id="aboutme">
+				<div class="bumper"></div>
+					<div id="name">
+						<h1>Ethan Fairweather</h1>
+						<h3>Front End Engineer</h3>
+					</div>
+					<h2>About Me</h2>
+				<div class="textblock">
+					<div class="leftblock">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	
+					</div>
+					<div class="rightblock">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	
+					</div>
+				</div>
+			</div>
+			<div id="skills">
+				<div class="bumper">
+				</div>
+				<h2>Technical Skills</h2>
+				<div class="textblock">
+					<ul class="leftblock">
+						<li> HTML, CSS, Javascript </li>
+						<li> Bootstrap, Git, Jquery</li>
+						<li> NodeJS, NPM, LESS, API's</li>
+						<li> Typescript, Foundation, REST</li>
+					</ul>
+					<ul class="rightblock">
+						<li>AngularJS, Mobile Design, Deployment </li>
+						<li>Python, Ruby, Java, JavaME</li>
+						<li>Angular, PlatypusTS, PlatypusUI</li>
+						<li>BD-J, Cordova, C, C++</li>
+					</ul>
+				</div>
+			</div>	
+			<div id="projects">
+				<div class="bumper">
+				</div>
+				<h2>Projects</h2>
+				<div class="textblock">
+					<div class="projects">
+						<h4>Business Consultant</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div id="resume">
+				<div class="bumper">
+				</div>
+				<h2>Experience</h2>
+				<div class="textblock">
+					<ul id="experience">
+						<li>
+							<h4>Recent Position</h4>
+							<p class="date">July 2013 to May 2014</p>
+							<p class='description'>I worked part time for Banc Statements Inc., analyzing production data in various forms. My projects ranged from compiling machine data to making recommendations for future expansions.</p>
+						</li>
+						<li>
+							<h4>Recent Position</h4>
+							<p class="date">May 2008 to December 2012</p>
+							<p class="description">I worked in the bank statement printing department and occasionally got involved in the management of the department.</p>
+						</li>
+					</ul>
+				</div>
+				<h2>Education</h2>
+					<div class="textblock">
+						<ul>
+							<li>DepotU</li>
+							<li> University of Alabama</li>		
+						</ul>
+					</div>
+			</div>
+			<div id="contact">
+				<div class="bumper">
+				</div>
+				<h2>Contact Me</h2>
+				<div id="contact-fields">
+					<form>
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="John Doe" required>
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="jdoe@domain.com" required>
+						<label for="message">Message</label>
+						<input type="text" id="message" required>
+						<input type="submit" id="submit" value="Send">
+					</form>
+				</div>
+			</div>
+		</div> <!-- end content -->
+		<footer class="bar">
+			<ul>
+				<li><a href="https://github.com/craigdragon17">Github</a></li>
+				<li><a href="https://www.linkedin.com/in/efairweather050990">LinkedIn</a></li>
+			</ul>
+			<p>&copy; 2015</p>
+		</footer>
+		</div>	
+	</body>
+	
+</html>

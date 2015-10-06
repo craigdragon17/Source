@@ -1,0 +1,103 @@
+//Custom fonts 
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+
+
+//variables
+@generalColor: #639BA8;
+@base: white;
+@headingFont: 'Shadows Into Light Two', cursive;
+@fontFam: Georgia, Times, serif;
+@highlight: lighten(@generalColor, 20%);
+@doubleHighlight: lighten(@generalColor, 40%);
+@shade: darken(@generalColor, 20%);
+@doubleShade: darken(@generalColor, 40%);
+@padding: 20px 0;
+@width: 300px;
+
+
+
+// Custom Mixins
+.hover {
+  &:hover {
+    background: @shade;
+    color: @base;
+    text-decoration: none;
+  }  
+}
+
+//parameter mixin with default
+.border-radius(@radius:4px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.heading-border(@border-color: @highlight) {  
+  border-top: @border-color solid 2px;
+  border-bottom: @border-color solid 2px;
+  padding: 10px 0;  
+}
+
+//Less/CSS
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: @base;
+  font-family: @fontFam;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @headingFont;
+}
+
+h2 {
+  .heading-border;
+}
+
+.space {
+  height: 5em;
+}
+
+header {
+  #header-navbar li a, a#navbar-home {
+    .hover;
+  }
+}
+
+div#main {
+  .date {
+    font-style: italic;
+    color: @generalColor;
+  }
+  div#contact-content {
+    .border-radius;
+    background: @highlight;
+    color: @base;
+    max-width: @width*2;
+    margin: 40px auto;
+    form {
+      padding: 30px 80px;
+    }
+  }
+}
+
+footer {
+  width: @width*2;
+  margin: 40px auto 0;
+  border-top: @highlight solid;
+  color: @generalColor;
+  li {
+    padding: @padding;
+    a {
+      color: @generalColor;
+      .hover;
+      padding: 20px;
+    }
+  }
+}

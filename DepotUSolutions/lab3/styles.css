@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+.hover:hover {
+  background: #3b616a;
+  color: white;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  font-family: Georgia, Times, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Shadows Into Light Two', cursive;
+}
+h2 {
+  border-top: #a4c5cd solid 2px;
+  border-bottom: #a4c5cd solid 2px;
+  padding: 10px 0;
+}
+.space {
+  height: 5em;
+}
+header #header-navbar li a:hover,
+header a#navbar-home:hover {
+  background: #3b616a;
+  color: white;
+  text-decoration: none;
+}
+div#main .date {
+  font-style: italic;
+  color: #639ba8;
+}
+div#main div#contact-content {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background: #a4c5cd;
+  color: white;
+  max-width: 600px;
+  margin: 40px auto;
+}
+div#main div#contact-content form {
+  padding: 30px 80px;
+}
+footer {
+  width: 600px;
+  margin: 40px auto 0;
+  border-top: #a4c5cd solid;
+  color: #639ba8;
+}
+footer li {
+  padding: 20px 0;
+}
+footer li a {
+  color: #639ba8;
+  padding: 20px;
+}
+footer li a:hover {
+  background: #3b616a;
+  color: white;
+  text-decoration: none;
+}

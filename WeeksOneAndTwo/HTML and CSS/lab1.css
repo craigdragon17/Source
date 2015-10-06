@@ -1,0 +1,244 @@
+/*### Instuctions
+//Using the sample as a reference, create a simple resume page with the following requirements:
+
+//You can reference more on [HTML here](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference) and
+//[CSS here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+//*All text can be filled with your information or [Lorem Ipsum](http://loremipsumgenerator.org/) filler text.
+
+
+//#### Further Reading
+//This is also a great explanation on [floats](http://alistapart.com/article/css-floats-101)
+
+//#### Basic Req's:
+//* It should have an external style sheet
+//* The body should contain a header, footer and content
+
+//###### Header
+//*	Should have a navbar with at least 5 links (i.e. About, Skills, Resume, Contact, Projects etc.)
+//*	Should remain on top of all content when scrolling
+//*	The links should link to where the content is located on the page
+
+//###### About
+//*	Should have two small paragraphs
+//*	Float the paragraphs so they are side by side columns
+
+//###### Skills
+//*	List technical skills in two columns
+//*	Float the list so they are side by side columns
+
+//###### Resume
+//*	Should have an Experience and Education section
+//*	Under Experience, indent the content and italicize any dates
+
+//###### Contact
+//*	Should have a border, heading and contact form
+//*	All user to input name, email, message and send
+//*	Labels should be uppercase and bold but handled in css
+//*	Require user to input all field in order to send
+
+//###### Footer
+//*	A link to your github and linkedIn accounts
+//*	Should have your name and copyright
+
+//##### Also:
+//*	No underline on any links
+//*	Font should be all one color
+//*	Body background unique from font color
+//*	Border, labels, nav and footer background all one color
+//*	Links should change color when you hover over them
+//*	Form and content should be centered*/
+body {
+	background: white;
+	font-family: Georgia, Times, serif;
+	
+}
+h2 {
+	border-top: #a4c5cd solid 2px;
+	border-bottom: #a4c5cd solid 2px;
+	padding: 10px 0;
+	margin: 0 auto;
+	width:850px;
+	
+}
+html {
+	
+}
+header {
+	text-align: center;
+	padding: 12px;
+	width: 100%;
+	color:#639ba8;
+	background:#a4c5cd;
+	position: fixed;
+	height: 3em;
+}
+header ul{
+		margin: 10px;
+}
+header ul li {
+	display: inline;
+	padding: 12px;
+}
+header ul li a {
+	 text-decoration: none;
+	 color: white;
+}
+header li:hover {
+	background: #3b616a;
+}
+header li:hover a {
+	color:white;
+}
+.bumper {
+	height: 5em;
+}
+#container {
+  margin: 0 auto;
+}
+#content { 
+	 text-align: center;
+	 padding: 20px 0;
+	 max-width: 900px;
+	 margin: 0 auto;
+	 width: 300px;
+	
+}
+
+#aboutme {
+	
+}
+
+#name{
+	
+}
+.textblock {
+	 margin: 0 100px 0;
+	 text-align: left;
+	 padding: 20px;
+}
+div#container div#content .rightblock {
+  position: relative;
+}
+div#container div#content .rightblock p {
+  padding: 20px 0 20px 40px;
+}
+div#container div#content .rightblock li {
+  padding: 0 0 0 40px;
+}
+div#container div#content .leftblock p {
+  padding: 20px 40px 20px 0;
+}
+div#container div#content .leftblock li {
+  padding: 0 40px 0 0;
+}
+#skills {
+	
+}
+#projects{
+	
+}
+.projects{
+	
+}
+#resume {
+	
+}
+#experience {
+	
+}
+.date{
+	
+}
+.description{
+	
+}
+#contact{
+  
+	
+}
+ #container #content #contact-fields {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #639ba8;
+  background: #a4c5cd;
+  padding: 20px 0;
+  color: white;
+  width: 600px;
+  margin: 20px auto;
+}
+form {
+  width: 300px;
+  margin: 20px auto 0;
+}
+form label {
+  width: 290px;
+  display: block;
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: left;
+}
+form input {
+  width: 290px;
+  display: block;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 0 10px;
+  border: none;
+  font-size: 20px;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+}
+form #message {
+  height: 200px;
+}
+form #submit {
+  color: #639ba8;
+  background: white;
+  width: 300px;
+  font-style: normal;
+}
+form #submit:hover {
+  color: white;
+  background: #3b616a;
+}
+footer {
+  text-align: center;
+  height: 3em;
+  color: #639ba8;
+  background: white;
+  padding: 12px;
+  width: 600px;
+  border-top: #a4c5cd solid;
+  margin: 40px auto 0;
+}
+footer ul {
+  margin: 10px;
+}
+footer ul li {
+  display: inline;
+  padding: 12px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #639ba8;
+}
+footer li:hover {
+  background: #3b616a;
+}
+footer li:hover a {
+  color:white;
+}
+.bar {
+  clear:left;
+}

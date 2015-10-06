@@ -1,0 +1,230 @@
+//variables
+@generalColor: #639BA8;
+@base: white;
+@fontFam: Georgia, Times, serif;
+@highlight: lighten(@generalColor, 20%);
+@doubleHighlight: lighten(@generalColor, 40%);
+@shade: darken(@generalColor, 20%);
+@doubleShade: darken(@generalColor, 40%);
+@padding: 20px 0;
+@width: 300px;
+
+
+// Custom Mixins
+.formStyle {
+    width: @width - 10;
+	  display: block;
+	  padding: 5px;
+}
+
+.hover {
+  li:hover {
+    background: @shade;
+    a {
+      color: @base;
+      }
+  }  
+}
+
+.clear {
+  clear:both;
+}
+
+.float {
+  
+}
+
+//parameter mixins
+
+.heading-border(@border-color: @highlight) {  
+  border-top: @border-color solid 2px;
+  border-bottom: @border-color solid 2px;
+  padding: 10px 0;  
+  margin: 0 auto;
+  width: @width*2.5;
+}
+
+.bar(@bg, @bg-base-color) {
+  text-align: center;
+  height: 3em;
+  .set-text-color(@bg);
+  padding: 12px;
+  ul {
+    margin: 10px;
+    li {
+      display: inline;
+      padding: 12px;
+      a {
+        text-decoration: none;
+        color: @bg-base-color;
+      }
+    }
+  }
+}
+
+//parameter mixin with default
+.border-radius(@radius:5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+// guarded mixins
+
+.set-text-color (@bg-color) when (lightness(@bg-color) >= 50%) { 
+  color: @generalColor;
+  background: @bg-color;
+}
+
+.set-text-color (@bg-color) when (lightness(@bg-color) < 50%) { 
+  color: @base;
+  background: @bg-color;
+}
+
+// LESS/CSS 
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1;
+} 
+
+body {
+  background: @base;
+  font-family: @fontFam;
+}
+
+h2 {
+  .heading-border;
+}
+
+
+.space {
+  height: 5em;
+}
+
+header {
+  .bar(@highlight, @base);
+  .hover;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+div#container {
+  margin: 0 auto;
+  div#content {
+    text-align: center;
+    padding: @padding;
+    max-width: 900px;
+    margin: 0 auto;
+    .content-block {
+      margin: 0 100px 0;
+      text-align: left;
+      padding: 20px;
+    }
+    li {
+      list-style-type: none;
+    }
+    .half {
+      float: left;
+      width: @width;
+    }
+    .right {
+      position: relative;
+      p {
+        padding: 20px 0 20px 40px;
+      }
+      li {
+        padding: 0 0 0 40px;        
+      }
+    }
+    .left {
+      p {
+        padding: 20px 40px 20px 0;
+      }
+      li {
+        padding: 0 40px 0 0;        
+      }
+    }
+    div#about {
+      div#name {
+        padding: @padding;
+      }
+    }
+    div#skills, div#projects {
+      .clear;
+    }
+    div.projects, ul#experience li {
+      padding: @padding;
+    }
+    div#resume{
+      ul#experience li {
+        p {
+          text-indent: 10px;
+        }
+        .date {
+          font-style: italic;
+          color: @highlight;
+        }
+      }
+    }
+    
+    div#contact-content {
+      .border-radius;
+      .set-text-color(@highlight);
+      padding: @padding;
+      color: @base;
+      width: @width*2;
+      margin: 20px auto;
+    }
+  }
+}
+
+form {
+  width: @width;
+  margin: 20px auto 0;
+  label {
+    .formStyle;
+	  color: @base;
+	  text-transform: uppercase;
+	  font-weight: bold;
+	  font-size: 11px;
+	  text-align: left;
+  }
+  
+  input {
+    .formStyle;
+    .border-radius;
+	  margin: 0 0 10px;
+	  border: none;
+  	font-size: 20px;
+  	font-family: @fontFam;
+	  font-style: italic;
+  }
+  #message {
+    height: 200px;
+  }
+  #submit {
+    .set-text-color(@base);
+    width: @width;
+    font-style: normal;
+      &:hover {
+        .set-text-color(@shade);
+      }
+  }
+}
+
+footer {
+  .bar(@base, @generalColor);
+  .hover;
+  width: @width*2;
+  border-top: @highlight solid;
+  margin: 40px auto 0;
+}

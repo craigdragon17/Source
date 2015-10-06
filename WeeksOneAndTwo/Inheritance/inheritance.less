@@ -1,0 +1,44 @@
+@road: #78786E;
+@vehicle-length:100px;
+@vehicle-width: 100px;
+@positon-a: absolute;
+@color-red: red;
+@color-green: green;
+@color-blue: blue;
+@color-yellow: yellow;
+
+
+//Less/Css
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background:@road;
+}
+
+.motorCycle{
+	position: @positon-a;
+	height: @vehicle-length;
+	width:@vehicle-width;
+	background-color:@color-red;
+}
+
+.copCar{
+	position: @positon-a;
+	height: @vehicle-length;
+	width:@vehicle-width;
+	background-color:@color-blue;
+}
+.Car {
+	position: @positon-a;
+	height: @vehicle-length;
+	width:@vehicle-width;
+	background-color:@color-green;
+}
+.Tank {
+	position: @positon-a;
+	height: @vehicle-length;
+	width:@vehicle-width;
+	background:@color-yellow;
+}

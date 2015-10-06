@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+.nav li {
+  display: inline;  
+}
+
+
+.col-md-3 .logo img {
+width: 100px;
+height:auto;
+display: block;
+margin:auto;
+padding-top: 15px;
+padding-bottom: 15px;	
+}
+
+.navbar{
+	padding-right:125px;	
+}
+
+
+.nav .col-md-9 .pull-right .navbar li {
+	display:inline-block;
+	padding-left: 40px;
+	padding-right:40px;
+	padding-top: 64px;	
+}
+
+.nav .col-md-9 .pull-right .navbar a {
+	color:#5a5a5a;
+	font-size:12pt;
+	font-family:"Montserrat Light";
+	font-weight:bold;
+	text-transform:uppercase;
+	position:relative;	
+}
+
+.jumbotron {
+	background-color:#0a8e84;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  padding-bottom: 25px; 
+}
+
+.jumbotron .container .col-lg-8 {
+	padding-bottom:100px;
+	padding-top:10px
+}
+
+.jumbotron h1{
+  color:#ffffff;
+  font-size: 36px;  
+  font-weight: bold;
+  padding-left:15px;
+  padding-top: 75px; 
+}
+
+.jumbotron p{
+  font-size:18px;
+  font-family:montserrat;
+  color:#FFFFFF;
+  padding-left: 15px;
+  padding-right: 170px;
+  padding-top: 15px;  
+}
+.container .col-lg-8 .jumbo-button {
+	margin: auto;
+	padding-left: 25px;
+}
+.styled-button {
+	background-color:transparent;
+	font-family:"Montserrat Bold";
+	font-size:14pt;
+	padding:5px;
+	width:150px;
+	text-transform:uppercase;
+}
+
+.gray-styled-button {
+	color:#5a5a5a;
+	border:2px solid #5a5a5a;	
+}
+
+.white-styled-button {
+	color:#FFFFFF;
+	border:2px solid #FFFFFF;
+}
+
+.jumbotron .container .col-lg-4 {
+	padding-top:25px;
+	padding-left:75px;
+}
+
+.jumbotron .container .col-lg-4 img{
+	height:475px;	
+}
+
+.subtext-box {
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.subtext-box .container .row .thumbnail {
+	width: 300px;
+	margin: auto;
+}
+
+.subtext-box .container .row .col-md-4 h1{
+	font-size: 16px;
+	font-family: montserrat;
+	color: #5a5a5a;
+	font-weight: 600;
+	text-align: center;
+}
+
+.subtext-box .container .row .col-md-4 p{
+	font-size: 16px;
+	font-family: montserrat;
+	color: #5a5a5a;
+	text-align: center;	
+}
+
+	
+	
+	
+	
+	

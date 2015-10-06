@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background:;
+}
+.Car {
+  position: absolute;
+  height:100px;
+  width:100px;
+  background-color: red;
+}
+.CopCar {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+.Vehicle{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}

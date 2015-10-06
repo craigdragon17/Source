@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+		<h1>{{user}}'s Feed</h1>
+		<form>
+			<div clas="form-group">
+				<label>User:</label>
+				<textarea class="form-control status-box" placeholder="whats on your mind monkey butt?" ng-model="tweet.text"></textarea>
+			</div>
+			<button class="btn" ng-click="post()">Post</button>
+			<ul class="posts">
+				<li ng-repeat="tweet in tweets">{{tweet.user + ':' + tweet.text}}</li>
+			</ul>
+		</form>
+	</div>
+</div>
