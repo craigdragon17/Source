@@ -1,0 +1,14 @@
+<h1>Hello World!</h1>
+<div>{{name}}</div>
+<br>
+<input type="text" plat-bind="name">
+<br>
+<ul plat-control="plat-foreach" plat-context="customers">
+	<li>
+<plat-link plat-options="{view:'firstviewcontrol-vc', parameters: { id: id }}">
+	{{name}}
+	
+</plat-link>
+	</li>
+</ul>
+<plat-button class="button-primary" plat-tap="doSomething()">Hello!</plat-button>
