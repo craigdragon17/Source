@@ -3,13 +3,43 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-		<script src = "http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="button.js"></script>
+		<link rel="stylesheet" href="styles.css">
+
 	</head>
 	<body>
-		
+<!--1. Make a button that displays an alert when clicked using DOM.-->
+<button id="textAlert"><h1>Stone</h1></button>
+<br><br><br><br><br>
+	
+<!--2. Make a button and text box. When the button is clicked,
+ display an alert with the message that is typed in the text box using DOM.-->
+ <input type="text" placeholder="Please Type Here." id="textbox">
+<br>
+ <button onclick="myText()"><h1>Type, then Click</h1></button>
+<!--3. Create a div in HTML then add JavaScript to make it change colors whenever your mouse hovers over the div.
+ The div should return to it's original color when the mouse exits the div using DOM.-->
+ <div id="walter"></div>
+ <br>
+ 
+ 
+<!--4. Put some text in a paragraph. Make it where when you click on the paragraph text, the color of the text switches to red.
+ Once complete, try making it switch to a random color each click using DOM.-->
+ <div id="onASteek">
+ <p>Jose Jalapino on a Steek</p>
+ </div>
+ 
+<!--5. Add a span that says your name in it to an empty div using DOM.-->
+<input type="text" placeholder="mexican condiment" id="yourMom">
+<br>
+<button onclick="jose()"><h1>I do not use them</h1></button>
+<div id="nameHere"></div>
+<br>
+
+
+
+<!--6.Create a <ul> in HTML. From JavaScript add an <li> for items in an array that you create using DOM.-->
+<ul id="mylist"></ul>
+	
+			<script src="dom.js"></script>
 	</body>
 </html>
