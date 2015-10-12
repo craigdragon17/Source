@@ -1,0 +1,21 @@
+{
+	"name":"watch-files",
+	"version":" 1.0.0",
+	"private": true,
+	"dependencies": {
+		"less": "latest"
+	},
+	"devDependencies":{
+		"watchify": "latest",
+		"typescript": "latest",
+		"nodemon": "latest"
+	},
+	"scripts":{
+		"build": "npm run less & npm run typescript",
+		"less": "lessc main.less main.css",
+		"typescript":"tsc main.ts --out main.js",
+		"watch:less": "nodemon -w . -e less -x npm run less",
+		"watch:typescript": "nodemon -w . -e ts -x npm run typescript",
+		"watch": "npm run watch:less & npm run watch:typescript"
+	}
+}

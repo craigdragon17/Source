@@ -1,0 +1,26 @@
+{
+	"name":"lab-app",
+	"version": "0.0.0",
+	"private": true,
+	"main":"main/app/app.js",
+	"dependencies": {
+		"browserify": "latest",
+		"less": "latest",
+		"tsd": "latest",
+		"typescript": "latest"
+	},
+	"devDependencies": {
+		"nodemon": "latest",
+		"watchify": "latest"
+	},
+	"scripts": {
+		"typescript": "tsc main.ts --out main.js",
+		"less":"mkdirp app/dist && lessc app/styles/main.less  app/dist/app.css",
+		"build": "npm run less &&  npm run typescript",
+		"watch:less":"nodemon -w . -e less -x npm run less",
+		"watch:typescript":"nodemon -w . -e ts -x npm run typescript",
+		"watch:browserify": "nodemon -w . -e js -i app/dist/app.js -x npm run browserify",
+		"watch": "npm run watch:less & npm run watch:typescript & npm run watch:browserify",
+		"browserify":"browserify main.js > app/dist/app.js"
+	}
+}
