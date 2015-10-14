@@ -1,14 +1,22 @@
 (function() {
-	//1. Make a button that displays an alert when clicked using Angular.
-	var app = angular.module('angularBusy',['ngRoute']);
+	var app = angular.module('angularBusy', []);
 	
-	app.config(['$routeProvider', function($routeProvider) {
-		$routeProvider
-		.when('/', {
-			controller: 'listController',
-			templateUrl:"d" 
-		})
-	}])
+	app.controller('exampleController',['$scope', function ($scope){
+		$scope.message = '';
+		$scope.alertInput = function() {
+			alert($scope.message);
+		}
+		$scope.clickMe = function() {
+		alert('Hi class!');
+		}
+		$scope.hoverColor = "lightsalmon";
+		$scope.toggleColor = function() {
+			$scope.hoverColor = 
+		}
+	}]);
+})();
+	//1. Make a button that displays an alert when clicked using Angular.
+	
 	
 //2. Make a button and text box. When the button is clicked,
 // display an alert with the message that is typed in the text box using Angular.
@@ -25,5 +33,3 @@
  	
 
 //6.Create a <ul> in HTML. From JavaScript add an <li> for items in an array that you create using Angular.
-
-})();

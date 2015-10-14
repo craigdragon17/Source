@@ -6,6 +6,8 @@
 	"dependencies": {
 		"browserify": "latest",
 		"less": "latest",
+		"tsconfig-glob": "latest",
+		"tsconfig-lint": "latest",
 		"tsd": "latest",
 		"typescript": "latest"
 	},

@@ -4,13 +4,14 @@
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js'></script>
 		<script src="app.js"></script>
 	</head>
-	<body>
+	<body ng-controller="angularBusy">
 		
 <!--1. Make a button that displays an alert when clicked using DOM.-->
-	<button class="btn btn-default" ng-click="">Alert</button>
+
+	<button class="btn btn-default" ng-click="" id="button">Alert</button>
 	
 <!--2. Make a button and text box. When the button is clicked,
  display an alert with the message that is typed in the text box using dom.-->
