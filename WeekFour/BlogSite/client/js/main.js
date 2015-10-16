@@ -1,6 +1,5 @@
 //Use to instantiate app, connect factory & controllers and configure app.
-( function (){
-var app = angular.module('ethanBlog', ['ngRoute', myBlog]);
+var app = angular.module('ethanBlog', ['ngRoute','ngResource']);
 
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
@@ -18,4 +17,3 @@ app.config(['$routeProvider', function($routeProvider) {
 	})
 }]);
 
-});
